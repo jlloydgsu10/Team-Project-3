@@ -6,8 +6,12 @@ var myMap = L.map("map", {
 });
   
   // Adding the tile layer
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// }).addTo(myMap);
+
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
+        attribution: '©OpenStreetMap, ©CartoDB'
 }).addTo(myMap);
   
   // Use this link to get the GeoJSON data.
@@ -43,7 +47,45 @@ d3.json(link).then(function(data) {
                 fillOpacity: 0.5,
                 weight: 1.5
             };
+        },
+        onEachFeature: function(feature, layer) {
+        layer.bindPopup("<h1>" + feature.properties.thing + "</h1> ");
         }
     }).addTo(myMap);
+
+    // var marker = L.marker([45.52, -122.67], {
+    //     draggable: true,
+    //     title: "My First Marker"
+    //   }).addTo(myMap);
+    // // Binding a popup to our marker
+    // marker.bindPopup("Hello There!");
+
+    // var myIcon = L.divIcon({className: 'my-div-icon'});
+    // L.marker([45.52, -122.67], {icon: myIcon}).addTo(myMap);
+  //   var middle = [45.52, -122.67]
+  //   L.Control.textbox = L.Control.extend({
+	// 	onAdd: function(myMap) {
+			
+	// 	var text = L.DomUtil.create('div');
+	// 	text.id = "info_text";
+	// 	text.innerHTML = "<strong>Hayneville</strong>"
+	// 	return text;
+	// 	},
+
+	// 	onRemove: function(myMap) {
+	// 		// Nothing to do here
+	// 	}
+	// });
+	// L.control.textbox = function(opts) { return new L.Control.textbox(opts);}
+	// L.control.textbox({ position: middle }).addTo(myMap);
+
+   
+
+  
+
+      
+      
+    
+
 });
   
