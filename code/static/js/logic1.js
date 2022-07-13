@@ -13,12 +13,11 @@ d3.csv("./static/data/biden_approval.csv").then(function(data){
         
     });
 });
-console.log(date1)
-console.log(rating)
+// console.log(date1)
+// console.log(rating)
 
 var Trace1 = {
-    // x: unpack(rows, 'Date'),
-    // y: unpack(rows, 'Relative_Approval'),
+    
     // x: [2,3,4],
     // y: [4,5,6],
     x: date1, 
@@ -31,6 +30,7 @@ var Trace1 = {
 };
 
 var traceData = [Trace1];
+console.log(Trace1)
 
 // // Apply the group barmode to the layout
 let layout = {
