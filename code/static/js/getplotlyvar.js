@@ -3,14 +3,15 @@ var rating=[];
 var get1 = [];
 var get2=[];
 // var rating
-d3.csv("./static/data/us_oil_res_js.csv").then(function(data){
+d3.csv("./static/data/us_prod/Haynv_prod.csv").then(function(data){
     data.map(function(d){
         // rating.push(parseInt(d.Relative_Approval));
-        rating.push(parseFloat(d.us_reserves));
+        rating.push(parseFloat(d.value));
+        get1.push(parseFloat(d.size));
         // get1.push(parseFloat(d.oil_demand));
         // get2.push(parseFloat(d.gap_analysis));
 
-        var parts = d.year.split('-');
+        var parts = d.period.split('-');
 // Please pay attention to the month (parts[1]); JavaScript counts months from 0:
 // January - 0, February - 1, etc.
         var mydate = new Date(parts[0], parts[1]-1, parts[2]).toLocaleDateString('en-CA');
@@ -20,7 +21,7 @@ d3.csv("./static/data/us_oil_res_js.csv").then(function(data){
           
     });
 });
-console.log(date1, rating)
+console.log(date1, rating, get1)
 
 // var trace1 =[{
 //     x:date1, 
