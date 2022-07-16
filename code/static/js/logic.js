@@ -4,8 +4,8 @@ var myMap = L.map("map", {
     zoom: 5.4959
 
 });
-myMap.createPane('labels');
-myMap.getPane('labels').style.zIndex = 650;
+// myMap.createPane('labels');
+// myMap.getPane('labels').style.zIndex = 300;
   
   // Adding the tile layer
 // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
