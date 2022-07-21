@@ -45,6 +45,7 @@ class USProd(db.Model):
 @app.route('/')
 def home():
     # return () this is where we will call render templace and index.html
+    return render_template("index.html")
 @app.route('/rig')
 def rig_count():
         rigcount = RigCount.query.all()
