@@ -42,11 +42,13 @@ class USProd(db.Model):
     # series-description = db.Column(db.String())
     value = db.Column(db.Integer())
     size = db.Column(db.Float())
-
 @app.route('/')
+def home():
+    # return () this is where we will call render templace and index.html
+@app.route('/rig')
 def rig_count():
         rigcount = RigCount.query.all()
-        usbasinprod = USProd.query.all()
+        # usbasinprod = USProd.query.all()
         
         results =[
             {
@@ -55,8 +57,20 @@ def rig_count():
                 "Rig_Count": rigs.rig_count,
                 "Size": rigs.size,
             } for rigs in rigcount]
-        usbasinprod = USProd.query.all()
+        # usbasinprod = USProd.query.all()
         
+        # results1 =[
+        #     {
+        #         "Basin_Name": prod.basins,
+        #         "Date": prod.period,
+        #         "Oil_Prod": prod.value,
+        #         "Size": prod.size,
+        #     } for prod in usbasinprod]
+        return jsonify(results)
+
+@app.route('/prod') 
+def us_prod():
+        usbasinprod = USProd.query.all()
         results1 =[
             {
                 "Basin_Name": prod.basins,
@@ -64,20 +78,9 @@ def rig_count():
                 "Oil_Prod": prod.value,
                 "Size": prod.size,
             } for prod in usbasinprod]
-        return jsonify(results, results1)
-    
-# def us_prod():
-#         usbasinprod = USProd.query.all()
-#         results1 =[
-#             {
-#                 "Basin_Name": prod.basins,
-#                 "Date": prod.period,
-#                 "Oil_Prod": prod.value,
-#                 "Size": prod.size,
-#             } for prod in usbasinprod]
 
-#         # return {"count": len(results), "us_rig_count": results}
-#         return jsonify(results1)
+        # return {"count": len(results), "us_rig_count": results}
+        return jsonify(results1)
 
 if __name__ == "__main__":
     app.run(debug=True)
