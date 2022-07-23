@@ -2,10 +2,13 @@
 __pycache__/
 *.py[cod]
 *$py.class
-config.py
+
 # C extensions
 *.so
-
+```python
+# Adding config.py file.
+config.py
+```
 # Distribution / packaging
 .Python
 build/
