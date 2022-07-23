@@ -21,9 +21,16 @@
 ![](https://github.com/jlloydgsu10/Team-Project-3/blob/main/code/images/rig_count_us_basins.png)
 ![](https://github.com/jlloydgsu10/Team-Project-3/blob/main/code/images/oil_prod_us_basins.png)
 
-## Instructions & Project Work:
+## Instructions:
+- Download the repo to local machine
+- Scripts included in the repo: python, SQL, python-flask, sqlalchemy, jupyter notebook, leaflet.js, d3.js, plotly.js
+- Run all jupyter notebook files in the "code" folder and "Jupyter_notebook_flask" folder to update sql database and make necessary csv's for plotly.js
+- Run app2.py for generating the graphs for comparison. 
+- Run basin.html separately for US shale oil basin visualization on separate webpage. 
 
-
+## Future work: 
+- To populate all the graphs using the flask-powered api
+- Add a choropleth to US basin map for rigcount and oil production separately.
 
 ## Credits: 
 
