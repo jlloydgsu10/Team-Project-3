@@ -21,12 +21,20 @@
 ![](https://github.com/jlloydgsu10/Team-Project-3/blob/main/code/images/rig_count_us_basins.png)
 ![](https://github.com/jlloydgsu10/Team-Project-3/blob/main/code/images/oil_prod_us_basins.png)
 
+## Instructions & Project Work:
+
+
+
 ## Credits: 
 
 1. Presidential Approval Ratings: <https://www.rasmussenreports.com>
 2. Total US and Global oil consumption and production data: <https://www.eia.gov>
 3. Rig count data: <https://rigcount.bakerhughes.com/>
 4. Inflation / Unemployment data: <https://www.usinflationcalculator.com/inflation/historical-inflation-rates/>, <https://fred.stlouisfed.org/series/UNRATE>
+
+## License
+MIT-lic
+
 
 
 
