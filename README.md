@@ -24,6 +24,8 @@
 ## Instructions:
 - Download the repo to local machine
 - Scripts included in the repo: python, SQL, python-flask, sqlalchemy, jupyter notebook, leaflet.js, d3.js, plotly.js
+- Signup for an API key with EIA.gov to use for running the notebooks: Production_Data-forjs.ipynb & US_BasinProd_Data-sql.ipynb
+    <https://www.eia.gov>
 - Run all jupyter notebook files in the "code" folder and "Jupyter_notebook_flask" folder to update sql database and make necessary csv's for plotly.js
 - Run app2.py for generating the graphs for comparison. 
 - Run basin.html separately for US shale oil basin visualization on separate webpage. 
