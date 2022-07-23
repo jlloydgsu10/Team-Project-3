@@ -4,3 +4,8 @@
 ![](https://github.com/jlloydgsu10/Team-Project-3/blob/main/code/images/Global_oil_supdem.png)
 ![](https://github.com/jlloydgsu10/Team-Project-3/blob/main/code/images/US_oil_Sipdem.png)
 ![](https://github.com/jlloydgsu10/Team-Project-3/blob/main/code/images/Pres_approval.png)
+![](https://github.com/jlloydgsu10/Team-Project-3/blob/main/code/images/inflation.png)
+![](https://github.com/jlloydgsu10/Team-Project-3/blob/main/code/images/unemployment_rate.png)
+![](https://github.com/jlloydgsu10/Team-Project-3/blob/main/code/images/leaflet_oil_basins_us.png)
+![](https://github.com/jlloydgsu10/Team-Project-3/blob/main/code/images/rig_count_us_basins.png)
+![](https://github.com/jlloydgsu10/Team-Project-3/blob/main/code/images/oil_prod_us_basins.png)
