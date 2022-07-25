@@ -1,8 +1,5 @@
 from calendar import month
 from datetime import date
-from http.client import PRECONDITION_REQUIRED
-from operator import index
-from tkinter import Misc
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
@@ -25,7 +22,7 @@ class RigCount(db.Model):
     __tablename__ = 'us_rig_count'
     index = db.Column(db.Integer, primary_key=True)
     basin_name = db.Column(db.String())
-    date = db.Column(db.DateTime())
+    date = db.Column(db.String())
     Month = db.Column(db.String())
     Year = db.Column(db.String())
     Oil = db.Column(db.Integer())
